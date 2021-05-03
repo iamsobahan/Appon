@@ -1,0 +1,791 @@
+/*  common css start */
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h5,p,ul,li{
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+text-align: center;
+   position: relative;
+
+
+
+}
+
+.title .icon {
+	width: 25px;
+	height: 25px;
+	z-index: 2;
+	background: #fff;
+    line-height: 25px;
+	text-align: center;
+    position: absolute;
+    top: 31px;
+    left: 49%;
+    
+}
+.title i {
+    transform: rotate(-45deg);
+    
+}
+
+.title .about{
+    position: relative;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    font-size: 24px;
+    color: #444444;
+    text-transform: uppercase;
+   
+
+}
+
+.title .about::after {
+	position: absolute;
+	bottom: -13%;
+	left: 50%;
+	width: 112px;
+	height: 1px;
+	background: black;
+	content: "";
+	transform: translate(-50%,-50%);
+}
+
+.title .about::before {
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	width: 121px;
+	height: 1px;
+	background: black;
+	content: ""; 
+    transform: translate(-50%,-50%);
+    
+}
+/*  common css end */
+
+/* nav bar part start */
+
+nav{
+   
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    margin: auto;
+    margin-top:  -100px;
+   
+   
+
+    
+}
+
+nav ul li{
+    margin-right: 50PX;
+}
+
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .4s;
+    position: relative;
+}
+
+nav ul li a::after{
+    position: absolute;
+    bottom: -9px;
+    left: 9px;
+    width: 0;
+    height: 2px;
+    background: #744fa0;
+    content: "";
+    transition: .4s;
+}
+
+nav ul li a:hover::after{
+    width: 20px;
+}
+nav ul li a:hover{
+    color: #744fa0;
+}
+
+nav ul li .active {
+    color: #744fa0;
+}
+
+nav ul li .active::after {
+    position: absolute;
+    bottom: -9px;
+    left: 9px;
+    width: 20px;
+    height: 2px;
+    background: #744fa0;
+    content: "";
+}
+
+nav .btn a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background: #744fa0;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+
+}
+
+/*  nav bar part end */
+
+/*  banner part start */
+
+
+#banner-part .banner-slider .banner-slide{
+    background: url(../images/banner1.jpg) center no-repeat;
+    background-size: cover;
+   
+   
+   
+}
+
+#banner-part .banner-slider .banner-slide .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding-top: 220px;
+    padding-bottom: 120px;
+    
+    
+   
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text{
+    text-align: right;
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text .banner-appon{
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text .banner-appon::first-letter{
+    color: #744fa0;
+    
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text .best{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text .banner-its{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    width: 463px;
+    margin-left: auto;
+    padding-top: 30px;
+    position: relative;
+    
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text .banner-its::after{
+    position: absolute;
+    top: 0;
+    left: 57%;
+    width: 200px;
+    height: 2px;
+    background: white;
+    content: "";
+  
+    
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a{
+    display: inline-block;
+    color: #fff;
+    background: #744fa0;
+    position: relative;
+    padding: 8px 20px 10px 55px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 15px;
+    transition: .4s;
+
+}
+
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a i{
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    font-size: 33px;
+
+
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a .on{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    transition: .4s;
+    
+   
+    
+
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a .store{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    transition: .4s;
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a:hover{
+    background: white;
+    color: #353535;
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a:hover .on{
+   
+    color: #353535;
+}
+
+#banner-part .banner-slider .banner-slide .overlay .banner-text a:hover .store{
+   
+    color: #353535;
+}
+
+#banner-part .slick-dots{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+
+}
+
+ #banner-part .slick-dots li button{
+    
+     font-size: 0;
+     width: 15px;
+     height: 15px;
+     background: transparent;
+     border: 3px solid white;
+     border-radius: 50%;
+     position: relative;
+     transition: .4s;
+ }
+
+ #banner-part .slick-dots li button::after{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 6px;
+     height: 6px;
+     background: #744fa0;
+     content: "";
+     border-radius: 50%;
+     opacity: 0;
+    
+ }
+
+ #banner-part .slick-dots .slick-active button{
+     border-color: #744fa0;
+
+ }
+
+ #banner-part .slick-dots .slick-active button::after{
+  opacity: 1;
+    
+}
+
+
+
+/*  banner part end */
+
+/*  about part start */
+
+
+#about-part {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#about-part .row .about-lorem {
+    margin-top: 50px;
+   
+}
+  #about-part .row .about-lorem .pappon{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #555555; 
+    width:559px;
+    line-height: 23px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #about-part .row .about-lorem .about-appon{
+    font-family: 'Raleway', sans-serif;f
+    font-size: 14px;
+    font-weight: 400px;
+    color: #555555; 
+    width: 555px;
+    margin: 0 auto;
+    margin-top: 35px;
+    line-height: 23px;
+
+    text-align: center;
+
+  }
+
+
+
+
+
+/*  about part end */
+
+/*  our awesome part  start*/
+#our-awesome{
+    background: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+#our-awesome .title .icon {
+        
+background: #f1f1f1;
+        
+}
+
+
+#our-awesome .row{
+    margin-top: 50px;
+}
+
+#our-awesome .row button {
+   text-align: left;
+   padding-left: 45px;
+   position: relative;
+   margin-left :10px;
+}
+
+#our-awesome .left .active {
+    background: transparent;
+    
+
+}
+
+
+
+
+
+#our-awesome .row button span{
+    display: block;
+}
+
+#our-awesome .row button i{
+    font-size: 42px;
+    color: #353535;
+    position: absolute;
+    top: 34%;
+    left: 0;
+    transition: .4s;
+}
+
+.phone-security{
+    margin-left: 9px;
+}
+
+#our-awesome .left .active i{
+  
+    color: #744fa0;
+
+}
+
+
+#our-awesome .row button .awesome-phone{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #353535;
+    padding-top: 36px;
+    transition: .4s;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+#our-awesome .left .active .awesome-phone{
+  
+    color: #744fa0;
+
+}
+
+
+#our-awesome .row button .awesome-sequre{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7d7d7d;
+    position: relative;
+    padding-bottom: 40px;
+    transition: .4s;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+#our-awesome .left .active .awesome-sequre{
+  
+    color: #744fa0;
+
+}
+
+#our-awesome .row button .awesome-sequre::after{
+    position: absolute;
+    bottom: 0;
+    left: -59px;
+    width: 272px;
+    height: 2px;
+    background: #353535;
+    content: "";
+    transition: .4s;
+}
+
+#our-awesome .left .active .awesome-sequre::after{
+  
+    background: #744fa0;
+    width: 341px;
+
+}
+
+#our-awesome .left button:last-child ::after{
+    width: 0;
+}
+
+#our-awesome .left .active:last-child ::after {
+    width: 0;
+}
+
+#our-awesome .right img{
+    width: 100%;
+}
+
+#our-awesome .right .text {
+    margin-top: 100px;
+    text-align: right;
+}
+
+#our-awesome .right .text .awesome-global{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #353535;
+    text-transform: uppercase;
+
+
+}
+
+#our-awesome .right .text .awesome-appon{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    margin-top: 35px;
+    width: 417px;
+}
+
+#our-awesome .right .text .awesome-lorem{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    margin-top: 30px;
+    width: 417px;
+}
+
+
+#our-awesome .row button:hover .awesome-sequre{
+    color: #744fa0;
+}
+
+#our-awesome .row button:hover .awesome-phone{
+    color: #744fa0;
+}
+
+#our-awesome .row button:hover i{
+    color: #744fa0;
+}
+
+#our-awesome .row button:hover .awesome-sequre::after{
+   background:#744fa0;
+   width: 341px;
+}
+
+#our-awesome .row button:last-child:hover .awesome-sequre::after{
+    width: 0;
+}
+/*  our awesome part  end*/
+
+/* screenshot part start */
+
+#screenshot-part {
+    margin-top: 60px;
+}
+
+#screenshot-part .screenshot-slider {
+    margin-top: 70px;
+}
+
+#screenshot-part .screenshot-slider .screeenshot-slide img{
+    margin: 0 auto;
+}
+
+#screenshot-part .slick-dots{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#screenshot-part .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#screenshot-part .slick-dots li button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid #353535;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+#screenshot-part .slick-dots li button::after {
+	position: absolute;
+	top: 22%;
+	left: 22%;
+	width: 6px;
+	height: 6px;
+	background: #744fa0;
+	border-radius: 50%;
+	content: "";
+    opacity: 0;
+}
+
+#screenshot-part .slick-dots .slick-active button{
+    border: 1px solid #744fa0;
+}
+
+#screenshot-part .slick-dots .slick-active button::after{
+    opacity: 1;
+}
+
+
+
+/*  screenshot part end */
+
+/* watch video part start */
+
+#watch-video-part {
+    margin-top: 100px;
+}
+
+#watch-video-part .watch-video {
+    background: url(../images/video_img.jpg) center no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+  
+    
+
+}
+
+#watch-video-part .watch-video .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 215px;
+    
+   
+}
+
+#watch-video-part .watch-video .overlay .watch-icon i{
+    color: white;
+    font-size: 80px;
+    transition: .4s;
+}
+
+#watch-video-part .watch-video .overlay .watch-icon i:hover{
+    color: #744fa0;
+}
+
+/*  watch video part end */
+
+/*  pricing plan start */
+
+#pricing-plan {
+    margin-top: 80px;
+}
+
+#pricing-plan .row .pricing-item{
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    margin-top: 70px;
+    
+    
+}
+
+#pricing-plan .row .pricing-item .pricing-top {
+    text-align: center;
+    background: #f1f1f1;
+   
+    border-radius: 9px 9px 0 0;
+    transition: .4s;
+    
+}
+
+#pricing-plan .row .pricing-item .pricing-top .free-plan{
+   
+    padding: 15px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #353535;
+    transition: .4s;
+   
+}
+
+#pricing-plan .row .pricing-item .pricing-round{
+    width: 115px;
+    height: 115px;
+    border: 3px solid #f1f1f1;
+    border-radius: 50%;
+    margin: 20px auto;
+    line-height: 23px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+#pricing-plan .row .pricing-item .pricing-round .math{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#pricing-plan .row .pricing-item .pricing-round .math span{
+    font-size: 40px;
+}
+
+#pricing-plan .row .pricing-item .pricing-round .month{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #555555;
+
+}
+
+
+
+#pricing-plan .row .pricing-item .pricing-ul ul{
+    text-align: center;
+    background: #f1f1f1;
+    padding-top: 35px;
+    border-radius:0 0 9px 9px;
+    
+    
+   
+}
+
+#pricing-plan .row .pricing-item .pricing-ul ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+#pricing-plan .row .pricing-item .pricing-ul ul .pricing-btn{
+    
+}
+
+#pricing-plan .row .pricing-item .pricing-ul ul .pricing-btn a{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: transparent;
+    color: #353535;
+    border-radius: 5px;
+    border: 1px solid #353535;
+    padding: 10px 20px;
+    transform: translateY(50%);
+    transition: .4s;
+
+}
+
+#pricing-plan .row .pricing-item:hover .pricing-top{
+        background: #744fa0;
+      
+        
+}
+
+#pricing-plan .row .pricing-item:hover .pricing-top .free-plan{
+  
+    color: white;
+}
+
+#pricing-plan .row .pricing-item:hover .pricing-ul ul .pricing-btn a{
+    background: #744fa0;
+    border: 1px solid #744fa0;
+    color: white;
+    
+}
+
+
+
+/*  pricing plan end */
