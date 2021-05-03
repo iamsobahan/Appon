@@ -789,3 +789,126 @@ background: #f1f1f1;
 
 
 /*  pricing plan end */
+
+/*  our team part start */
+
+
+#team-part{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
+}
+
+#team-part .team-slider .team-slide {
+    position: relative;
+    margin: 0 10px;
+    margin-top: 70px;
+  
+    
+}
+
+#team-part .team-slider .team-slide .team-img {
+    position: relative;
+   
+  
+}
+
+#team-part .team-slider .team-slide .team-img img{
+    width: 100%;
+}
+
+#team-part .team-slider .team-slide .team-img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    
+}
+
+#team-part .team-slider .team-slide .team-img .overlay .team-icon i{
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: black;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 4px;
+    transition: .4s;
+}
+
+#team-part .team-slider .team-slide .team-img .overlay .team-icon i:hover {
+    background: #1da1f2;
+    color: white;
+}
+
+
+#team-part .team-width{
+    width: 373px!important;
+}
+
+
+
+#team-part .team-slider .team-slide .team-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #cccccc;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    z-index: -1;
+    transition: .4s;
+    text-align: center;
+    padding: 20px 52px;
+  
+
+}
+
+#team-part .team-slider .team-slide .team-text .name{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #353535;
+    text-transform: uppercase;
+}
+
+#team-part .team-slider .team-slide .team-text .position{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+#team-part .team-slider .team-slide .team-text .discription{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    width: 247px;
+    margin-top: 10px;
+   
+}
+
+
+#team-part .team-slider .team-slide:hover .overlay{
+    opacity: 1;
+}
+
+#team-part .team-slider .team-slide:hover .team-text{
+        top: 352px;
+}
+
+
+
+/*  our team part end */
