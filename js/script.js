@@ -87,6 +87,7 @@ $('.team-slider').slick({
   arrows: false,
   slidesToShow: 3,
   slidesToScroll: 1,
+
   responsive: [
     {
       breakpoint: 1024,
